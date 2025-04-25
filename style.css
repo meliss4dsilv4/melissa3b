@@ -4,15 +4,16 @@
     --fonte-primari:"Roboto Slab", serif;
     --fonte-secundaria:"Josefin Sans", sans-serif;
     --rosa-enevoada: #ffe5ecff;
- --rosa: #ffc2d1ff;
- --cherry-blossom-pink: #ffb3c6ff;
- --bakermiller-pink: #ff8fabff;
- --rose-pompadour: #fb6f92ff;
+    --rosa: #ffc2d1ff;
+    --cherry-blossom-pink: #ffb3c6ff;
+    --bakermiller-pink: #ff8fabff;
+    --rose-pompadour: #fb6f92ff;
+    --preto: #000000;
 }
 
 body{
     background-color: var(--rosa-enevoada);
-    color: var(--rose-pompadour);
+    color: var(--preto);
     font-family: var(--cherry-blossom-pink);
     font-weight: 400;
     font-style: normal;
@@ -79,7 +80,7 @@ display: block;
     background-color: var(--cherry-blossom-pink);
     border-bottom: 4px soli var(--rosa-enevoada)
 }
- .abas-textos{
+.abas-textos{
     background-color: var(--cherry-blossom-pink);
     padding: 40px;
     border-radius:0 0 40px 40px ;
@@ -93,7 +94,7 @@ display: block;
 .aba-conteudo-titulo-principal{
     font-size: 28px;
     text-align: center;
-    color: var(--rose-pompadour);
+    color: var(--preto);
 }
 .aba-conteudo-titulo-secundario{
     text-align: center;
