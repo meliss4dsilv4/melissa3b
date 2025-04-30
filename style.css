@@ -1,0 +1,105 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap');
+
+:root{
+    --fonte-primaria:"Roboto Slab", serif;
+    --fonte-secundaria:"Josefin Sans", sans-serif;
+    --rosa-enevoada: #ffe5ecff;
+    --rosa: #ffc2d1ff;
+    --cherry-blossom-pink: #ffb3c6ff;
+    --bakermiller-pink: #ff8fabff;
+    --rose-pompadour: #fb6f92ff;
+    --preto: #000000;
+    }
+
+body {
+    background-color: var(--rosa-enevoada);
+    color: var(--cherry-blossom-pink);
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.titulo-principal {
+    font-family: var(--fonte-primaria);
+    text-align: left;
+    width: 100%;
+    font-size: 32px;
+}
+
+.titulo-principal spam {
+    color: var(--rose-pompadour);
+}
+
+.botao {
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--bakermiller-pink);
+    color: var(--rosa);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left:4px solid var(--botao-ativo);
+    border-right: 4px solid var(--botao-ativo);
+}
+.botoes{
+    display: block;
+}
+.botao:first-child{
+border-radius: 40px 40px 0 0;
+}
+.botao:last-child{
+ border-radius: 0 0 40px 40px;
+}
+
+.botao.ativo {
+    background-color: var(--cherry-blossom-pink);
+    border-bottom: 4px solid var(--rosa-enevoada);
+}
+.abas-textos{
+    background-color: var(--cherry-blossom-pink);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+}
+.aba-conteudo.ativo{
+    display: block;
+}
+.aba-conteudo{
+    display: none;
+}
+.aba-conteudo-titulo-principal{
+    font-size: 28px;
+    text-align: center;
+    color: var(--rose-pompadour);
+}
+.aba-conteudo-titulo-secundario{
+    text-align: center;
+    color: var(--rose-pompadour);
+    text-transform: uppercase;
+}
+@media screen and (min-width:768px) {
+    .botoes{
+    display: flex ;
+    }
+    .botao:first-child{
+        border-radius: 40px 0 0 0;
+    }
+    .botao:last-child{
+        border-radius: 0 40px 0 0;
+    }
+}
