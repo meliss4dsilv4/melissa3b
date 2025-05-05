@@ -2,10 +2,10 @@ const botoes = document.querySelectorAll(".botao");
 const textos = document.querySelectorAll(".aba-conteudo");
 const contadores = document.querySelectorAll(".contador");
 
-const tempoObjetivo01 = new Date("2025-05-12T00:00:00");
-const tempoObjetivo02 = new Date("2029-06-11T00:00:00");
+const tempoObjetivo01 = new Date("2025-12-17T00:00:00");
+const tempoObjetivo02 = new Date("2028-06-11T00:00:00");
 const tempoObjetivo03 = new Date("2026-08-11T00:00:00");
-const tempoObjetivo04 = new Date("2025-09-12T00:00:00");
+const tempoObjetivo04 = new Date("2026-09-12T00:00:00");
 
 const tempos = [tempoObjetivo01, tempoObjetivo02, tempoObjetivo03, tempoObjetivo04]
 
@@ -32,7 +32,14 @@ function calculaTempo(tempoObjetivo) {
     let horas = Math.floor(minutos / 60);
     let dias = Math.floor(horas / 24);
 
-    return dias + " Dias " + horas + " Horas " + minutos + " Minutos " + segundos + " Segundos "
+    segundos %=60;
+    minutos %=60;
+    horas %=24;
+    if (tempoFinal > 0){
+        return dias + " Dias " + horas + " Horas " + minutos + " Minutos " + segundos + " Segundos";
+    } else {
+       return "Prazo Finalizado";
 
+    }
 
 }
